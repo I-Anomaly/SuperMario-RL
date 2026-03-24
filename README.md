@@ -1,2 +1,6 @@
 # SuperMario RL
  Well documented code provided by Group 2 for our Reinforcement Learning Project
+
+This project implements a Deep Double Q‑Network (DDQN) agent capable of learning to play Super Mario Bros through reinforcement learning. The agent observes the game environment, processes state transitions, and selects actions using an ε‑greedy policy that balances exploration and exploitation. A replay buffer stores experiences—state, action, reward, next state—which are sampled during training to stabilize learning and reduce correlation between updates. The DDQN architecture helps mitigate overestimation bias, enabling the agent to learn more accurate value estimates and improve long‑term performance.
+
+The training pipeline includes frame preprocessing, state stacking, reward shaping, and iterative policy updates using PyTorch. Over time, the agent learns to navigate levels more effectively, demonstrating measurable improvements in survival time, movement efficiency, and reward accumulation. The project includes clear documentation, modular code structure, and reproducible training steps, making it a solid foundation for experimenting with RL techniques, benchmarking DDQN performance, or extending the agent with more advanced methods such as prioritized replay or dueling networks.
